@@ -1,10 +1,4 @@
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-html {
+style html {
     width: 1400px;
 }
 
@@ -12,12 +6,45 @@ body {
     border-radius: 65px 80px;
     float: inline-start;
     position: absolute;
+    display: flex;
+    justify-items: space-between;
 }
-.button {
-    color: blue;
-    border-radius: 5px 32px;
-    
+
+p  {
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 40%;
 }
+
+section {
+    width: 33%;
+    justify-items: center;
+    text-align: center;
+
+}
+
+h1 {
+    width: 550px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.flex-container {
+
+    width: 800px;
+    opacity: calc(0.8);
+    display: flex;
+    flex-flow: flex wrap;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    align-content: justify;
+    background-color: #003816;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
 
 * {
     display: flex;

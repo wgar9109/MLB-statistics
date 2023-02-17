@@ -5,31 +5,50 @@
     <title>Skillcrush Center Flexbox</title>
     <meta charset="utf-8">
 
-    <link rel="stylsheet" href="main.css">
+    <link rel="stylsheet" href="Public/MLB-statistics/main.css">
     <meta name=" viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Lobster&family=Rajdhani:wght@700&display=swap"
-        rel="stylesheet">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Kanit&family=Lobster&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<style>
         body {
-            position: static;
+            position: absolute;
             background-image: url(bkgd.jpg);
             background-repeat: no-repeat;
-            padding: 2px 8px 15px 2px;
+            border-style: double;
             margin: 4px 1px 5px 1px;
             display: inline-flex;
             font-weight: 700;
-            width: 100%;
+            width: 1600px;
+            font-size: 30px;
+
         }
 
-        #demo {
-            overflow-block: 25px;
-            width: 30%;
+        .section {
+            width: 35%;
+            display: flex;
+            text-align: center;
+            font-size: 28px;
         }
 
-        .wrapper {
+        .flex-container {
+            min-width: 35%;
+            display: flex;
+            flex-flow: flex wrap;
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+            font-size: 32px;
+            align-items: space-between;
+            color: goldenrod;
+
+        }
+
+
+
+         .wrapper {
+            min-width: 35%;
             display: flex;
             position: relative;
             font-family: 'Rajdhani', sans-serif;
@@ -46,68 +65,81 @@
             background-repeat: no-repeat;
         }
 
+        span {
+            color: chartreuse;
+            font-size: 32px;
+            font-weight: 700;
+        
+        }
+
 
         .methods {
+            min-width: 30%;
+            text-align: center;
             text-transform: uppercase;
             display: flex;
-            flex-flow: flex wrap;
-            color: rgb(255, 255, 255);
-            position: relative;
-            width: 600px;
+            justify-content: space-evenly;
             font-family: 'Changa', sans-serif;
-            font-size: 46px;
+            font-size: 34px;
             font-weight: 800;
-            text-decoration: wavy;
+            text-decoration: underline;
+            color: purple;
 
         }
 
-
-        .container {
-            width: 800px;
-            opacity: calc(0.8);
-            display: flex;
-            flex-flow: flex wrap;
-            font-family: 'Lobster', cursive;
+        p {
+            color: black;
+            font-size: 34px;
             text-align: center;
-            font-size: 22px;
-            align-content: justify;
-            background-color: #003816;
-            background-repeat: no-repeat;
-            height: auto;
-            color: hwb(86 0% 0%);
         }
-    </style>
-</head>
 
-<body>
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-        Click me to display Date and Time.</button>
+        
+        footer {
+            border-style: dashed;
+            display: flex;
+            align-items: flex-end;
+            color: white;
+            text-align: center;
+        }
 
-    <p id="demo"></p>
+        </style>
+        <body>
+            
+            <section class="flex-container">
+                <h1>Hi. I'm Tyler G.</h1 style="width:350px;font-weight:800;">
+ <p>I am a Responsive Designer & Developerwho thrives on visual storytelling. When I'm not
+ working,
+        grinding or getting myself lost in a rabbit hole of slugs & snakes.</p>
 
-    <h1 class="methods">Methods of madness!</h1>
+        <p>I can be found in a hole in the wall,
+        grisling and washing off my new scuba gear.</p>
+        </section style="color: white; width:45%;">
+        
+        
+        <div class="wrapper">
+            
+            <p>I was born and raised in Alabama,
+        but <span>my real roots</span>reach to the South Congo. We are always on the go !</p>
+    
+    </div>
+    
+    <div class="wrapper">
+        
+        <p><span>My passion:</span>I LOVE music - it's one of the most powerful and diverse methods for expression
+ & communication. In the meantime,
+        I get my fix by going to lots & lots of concerts. I'm at 160 and
+ counting !</p>
+</div>
+ 
+ <span class="methods">A fun fact:</span>
+  
+       <p> Have yet to learn to align columns evenly. What am I missing?</p>
+    
+    
+    <footer>FIND ME ON LINKEDINN
+</footer>
 
-
-    <h2 class="wrapper">In an essay published in the '84 Abstract, HELP PLEASE?!? I DON'T KNOW HOW TO MAKE THE METHODS
-        CLASS TO THE TOP
-        James explained his frustration about his refusal to the MLB's
-        refusal to publish play-by-play accounts of every game.</h2>
-
-
-
-    <p class="container">The Baseball Book (90-92) was a loosely organized collection of commentary,
-        profiles,
-        historical articles,
-        and occasional pieces of research. James's assistant Rob Neyer was responsible for
-        much of the research,
-        and wrote several pamphlets.</p>
-    <footer>
-        <p class="container">Applied to an entire team or league,
-            the statistic correlates closely (usually within 5%) to that team's
-            or league's actual runs scored. Since James first created the statistic, sabermetricians have refined it to
-            make it more accurate,
-            and it is now used in many different variations</p>
-    </footer>
+</section>
 </body>
 
 </html>
