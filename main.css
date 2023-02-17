@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+html {
+    width: 1400px;
+}
+
+* {
+    display: flex;
+}
