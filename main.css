@@ -8,6 +8,17 @@ html {
     width: 1400px;
 }
 
+body {
+    border-radius: 65px 80px;
+    float: inline-start;
+    position: absolute;
+}
+.button {
+    color: blue;
+    border-radius: 5px 32px;
+    
+}
+
 * {
     display: flex;
 }
